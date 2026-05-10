@@ -127,7 +127,7 @@ python eval_geometry_qm9.py   --model_path outputs/geoldm_drugs_StP   --n_refere
 gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
 ```
 
-## A summary of changes
+## A summary of the changes made to the original code from EDM, GeoLDM, and RADM
 - Parser Arguments: Included StP and data_norm (direct normalization of coordinates) in the training scripts (e.g., `main_qm9.py`).
 - Directory overwrite check:
 	- Before starting a run, the script checks whether the experiment directory (`outputs/{exp_name}`) already exists.
