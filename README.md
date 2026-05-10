@@ -155,7 +155,7 @@ gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
 <p align="center">
   <img src="Figures/p1.png" width="65%">
   <br>
-  <em>Image Adopted From: [https://arxiv.org/pdf/2209.00796v13](https://arxiv.org/pdf/2209.00796v13)</em>
+  <em>Image Adopted From: https://arxiv.org/pdf/2209.00796v13</em>
 </p>
 
 - Diffusion models can generate high-quality and high-resolution images
@@ -165,7 +165,7 @@ gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
 <p align="center">
   <img src="Figures/p2.png" width="65%">
   <br>
-  <em>Image Adopted From: [https://arxiv.org/pdf/2209.00796v13](https://arxiv.org/pdf/2209.00796v13)</em>
+  <em>Image Adopted From: https://arxiv.org/pdf/2209.00796v13</em>
 </p>
 
 - The mathematical framework of diffusion models assumes a fixed-dimensional metric space
