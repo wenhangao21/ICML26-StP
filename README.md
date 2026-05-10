@@ -44,14 +44,15 @@ pip install gdown
 
 ## Preparing Dataset
 - QM9
-	- The dataset will automatically be downloaded and processed the first time you run the code.
+	- The dataset will automatically be downloaded and processed the first time you run the code
+ - 
 -GEOM-Drugs
 	- Download the file at https://dataverse.harvard.edu/file.xhtml?fileId=4360331&version=2.0   (Warning: 50gb):
 		`wget https://dataverse.harvard.edu/api/access/datafile/4360331`
 	- Untar it and move it to `StP/processed_dataset/geom/`.: `tar -xzvf 4360331`
 	- `pip install msgpack`
 	- `python3 build_geom_dataset.py`
-	- After processing, there should be a `geom_drugs_30.npy` file under `StP/processed_dataset/geom/`.
+	- After processing, there should be a `geom_drugs_30.npy` file under `StP/processed_dataset/geom/`
 
 	
 ## Train and Eval
@@ -78,7 +79,7 @@ python eval_structure.py   --model_path outputs/edm_drugs_StP   --n_reference 10
 
 
 ### RADM
-- Note: RADM weights are large, so you might want to delete/modify the lines of code responsible for saving intermediate checkpoints in the main training scripts (`qm9_ldm.py` and `drugs_ldm.py`).
+- Note: RADM weights are large, so you might want to delete/modify the lines of code responsible for saving intermediate checkpoints in the main training scripts (`qm9_ldm.py` and `drugs_ldm.py`)
 - To train RADM-StP, we first obtain the [pretrained autoencoders from the original authors](https://github.com/skeletondyh/RADM):
 ```bash
 cd RADM/outputs
@@ -121,30 +122,30 @@ python eval_geometry_qm9.py   --model_path outputs/geoldm_drugs_StP   --n_refere
 ```
 
 ## Trained Models
-- Trained models can be downloaded [here](https://drive.google.com/file/d/1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm/view?usp=sharing) or use the command below.
-	- Unzip the file, put the folders containing weights and pickle files into the output folder of each model and follow the evaluation commands above, only changing the model path.
+- Trained models can be downloaded [here](https://drive.google.com/file/d/1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm/view?usp=sharing) or use the command below
+	- Unzip the file, put the folders containing weights and pickle files into the output folder of each model and follow the evaluation commands above, only changing the model path
 ```bash
 gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
 ```
 
 ## A summary of the changes made to the original code from EDM, GeoLDM, and RADM
-- Parser Arguments: Included StP and data_norm (direct normalization of coordinates) in the training scripts (e.g., `main_qm9.py`).
+- Parser Arguments: Included StP and data_norm (direct normalization of coordinates) in the training scripts (e.g., `main_qm9.py`)
 - Directory overwrite check:
-	- Before starting a run, the script checks whether the experiment directory (`outputs/{exp_name}`) already exists.
-	- If it does, the user is prompted to confirm overwriting to prevent accidental loss of previous results.
-- Dataset: We changed the directory for the GEOM-Drugs dataset for all models to use.
+	- Before starting a run, the script checks whether the experiment directory (`outputs/{exp_name}`) already exists
+	- If it does, the user is prompted to confirm overwriting to prevent accidental loss of previous results
+- Dataset: We changed the directory for the GEOM-Drugs dataset for all models to use
 - Diffusion Model: Implemented StP and data_norm
-	- `qm9/models/get_model()`: Included StP and data_norm, passed into the diffusion models.
+	- `qm9/models/get_model()`: Included StP and data_norm, passed into the diffusion models
 	- StP is implemented during sampling from a zero-mean Gaussian: `utils.sample_center_gravity_zero_gaussian_with_mask()`
 	- data_norm is implemented in `normalize()` and `unnormalize()` under `en_diffusion/EnVariationalDiffusion`
 - Saving checkpoints:
-	- We begin monitoring NLL and RDKit metrics after a certain number of epochs.
-	- We do not monitor test NLL during training to save training time.
-	- Checkpoints are saved based on two criteria: eval NLL and molecular validity.
-	- Whenever a new best score is achieved for either metric, the model state is saved as a checkpoint.
-	- For GEOM-Drugs, we do not check RDKit metrics nor save checkpoints based on them due to computational costs.
-	- **We still only evaluate the best NLL checkpoint for fair comparison.**
-- Added scripts for structure evaluation.
+	- We begin monitoring NLL and RDKit metrics after a certain number of epochs
+	- We do not monitor test NLL during training to save training time
+	- Checkpoints are saved based on two criteria: eval NLL and molecular validity
+	- Whenever a new best score is achieved for either metric, the model state is saved as a checkpoint
+	- For GEOM-Drugs, we do not check RDKit metrics nor save checkpoints based on them due to computational costs
+	- **We still only evaluate the best NLL checkpoint for fair comparison**
+- Added scripts for structure evaluation
 
 ## Quick Overview
 
