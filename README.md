@@ -153,7 +153,7 @@ gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
 - Then train a neural network to reverse the process by denoising step by step
 	- Generation: Pure Gaussian Noise ⟶ Realistic Data Samples
 <p align="center">
-  <img src="Figures/p1.png" width="80%">
+  <img src="Figures/p1.png" width="65%">
   <br>
   <em>Image Adopted From: [https://arxiv.org/pdf/2209.00796v13](https://arxiv.org/pdf/2209.00796v13)</em>
 </p>
@@ -163,7 +163,7 @@ gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
 	- Then it adds high-frequency details, like hair strands, fine edges, etc.
 
 <p align="center">
-  <img src="Figures/p2.png" width="80%">
+  <img src="Figures/p2.png" width="65%">
   <br>
   <em>Image Adopted From: [https://arxiv.org/pdf/2209.00796v13](https://arxiv.org/pdf/2209.00796v13)</em>
 </p>
@@ -183,7 +183,7 @@ gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
 
 
 <p align="center">
-  <img src="Figures/p4.png" width="50%">
+  <img src="Figures/p4.png" width="35%">
 </p>
 
 - **Challenge**: Molecules have different numbers of atoms (i.e., different sizes)
