@@ -5,7 +5,7 @@ Wenhan Gao, Jingxiang Qu, Yi Liu
 Forty-third International Conference on Machine Learning (ICML), 2026
 
 <p align="center">
-  <img src="Figures/GenAI_word_cloud.png" width="80%">
+  <img src="Figures/GenAI_word_cloud.png" width="100%">
 </p>
 
 A [quick overview of the paper](#quick-overview) is included at the bottom of this readme file
