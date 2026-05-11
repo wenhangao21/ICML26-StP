@@ -163,7 +163,7 @@ gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
 	- Then it adds high-frequency details, like hair strands, fine edges, etc.
 
 <p align="center">
-  <img src="Figures/p2.png" width="65%">
+  <img src="Figures/p2.png" width="500">
   <br>
   <em>Image Adopted From: https://arxiv.org/pdf/2209.00796v13</em>
 </p>
@@ -172,7 +172,7 @@ gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
 	- e.g., images at a fixed resolution
 
 <p align="center">
-  <img src="Figures/p3.png" width="70%">
+  <img src="Figures/p3.png" width="550">
   <br>
   <em>Image created by snipping Stable Diffusion’s [official repo](https://github.com/compvis/stable-diffusion)</em>
 </p>
@@ -183,7 +183,7 @@ gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
 
 
 <p align="center">
-  <img src="Figures/p4.png" width="35%">
+  <img src="Figures/p4.png" width="300">
 </p>
 
 - **Challenge**: Molecules have different numbers of atoms (i.e., different sizes)
@@ -195,7 +195,7 @@ gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
 	- Larger molecules → Less data and higher structural complexity → Better performance?
 	
 <p align="center">
-  <img src="Figures/p5.png" width="65%">
+  <img src="Figures/p5.png" width="500">
 </p>
 	
 - **Why?** 
@@ -204,7 +204,7 @@ gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
 	
 
 <p align="center">
-  <img src="Figures/p6.png" width="85%">
+  <img src="Figures/p6.png" width="650">
 </p>
 
 - Diffusion models can generate high-quality and high-precision atomic structures  
@@ -212,7 +212,7 @@ gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
   - Then it performs <span style="color:#ff0000;"><b>fine-grained adjustments</b></span> to positions
   
  <p align="center">
-  <img src="Figures/p7.png" width="85%">
+  <img src="Figures/p7.png" width="650">
   <br>
   <em><span style="color:#1e90ff;"><b>Blue: Dominated by noise, the model tries to find a coarse structure;</b></span> <span style="color:#ff0000;">
 <b>Red: Overall structure is clear, the model performs fine-grained adjustments.</b></span></em>
@@ -221,13 +221,13 @@ gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
 - **Issue**: Under the same noise schedule $x_t=\alpha_{\mathrm{t}} x_0+\beta_t \epsilon, \epsilon \sim \mathcal{N}(\mathbf{0}, \mathbf{I})$, different sizes of molecules get corrupted at different rates
 
 <p align="center">
-  <img src="Figures/p8.png" width="85%">
+  <img src="Figures/p8.png" width="650">
 </p>
 
 - As a result: Larger molecules → Stabilize earlier in the generative process → Better performance!
 
 <p align="center">
-  <img src="Figures/p9.png" width="85%">
+  <img src="Figures/p9.png" width="700">
 </p>
 
 
