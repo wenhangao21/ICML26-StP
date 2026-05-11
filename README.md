@@ -48,7 +48,7 @@ pip install gdown
 - GEOM-Drugs
 	- Download the file at https://dataverse.harvard.edu/file.xhtml?fileId=4360331&version=2.0   (Warning: 50gb):
 		`wget https://dataverse.harvard.edu/api/access/datafile/4360331`
-	- Untar it and move it to `StP/processed_dataset/geom/`.: `tar -xzvf 4360331`
+	- Untar it and move it to `StP/processed_dataset/geom/`: `tar -xzvf 4360331`
 	- `pip install msgpack`
 	- `python3 build_geom_dataset.py`
 	- After processing, there should be a `geom_drugs_30.npy` file under `StP/processed_dataset/geom/`
@@ -153,7 +153,7 @@ gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
 - Then train a neural network to reverse the process by denoising step by step
 	- Generation: Pure Gaussian Noise ⟶ Realistic Data Samples
 <p align="center">
-  <img src="Figures/p1.png" width="65%">
+  <img src="Figures/p1.png" width="500">
   <br>
   <em>Image Adopted From: https://arxiv.org/pdf/2209.00796v13</em>
 </p>
@@ -224,7 +224,7 @@ gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
   <img src="Figures/p8.png" width="85%">
 </p>
 
-- As a result: Larger molecules → Stabilize earlier in the generative process → Better performance?
+- As a result: Larger molecules → Stabilize earlier in the generative process → Better performance!
 
 <p align="center">
   <img src="Figures/p9.png" width="85%">
