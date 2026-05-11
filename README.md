@@ -45,8 +45,7 @@ pip install gdown
 ## Preparing Dataset
 - QM9
 	- The dataset will automatically be downloaded and processed the first time you run the code
- - 
--GEOM-Drugs
+- GEOM-Drugs
 	- Download the file at https://dataverse.harvard.edu/file.xhtml?fileId=4360331&version=2.0   (Warning: 50gb):
 		`wget https://dataverse.harvard.edu/api/access/datafile/4360331`
 	- Untar it and move it to `StP/processed_dataset/geom/`.: `tar -xzvf 4360331`
