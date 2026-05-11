@@ -227,7 +227,7 @@ gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
 - As a result: Larger molecules → Stabilize earlier in the generative process → Better performance!
 
 <p align="center">
-  <img src="Figures/p9.png" width="700">
+  <img src="Figures/p9.png" width="800">
 </p>
 
 
@@ -237,12 +237,12 @@ gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
 - **In plain English**: We add less noise to smaller molecules and more noise to larger molecules
 
 <p align="center">
-  <img src="Figures/p10.png" width="85%">
+  <img src="Figures/p10.png" width="800">
 </p>
 
 - Result: Improved quality as well as more aligned generative trajectories
 
 <p align="center">
-  <img src="Figures/p11.png" width="85%">
+  <img src="Figures/p11.png" width="800">
 </p>
 
