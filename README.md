@@ -183,7 +183,7 @@ gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
 
 
 <p align="center">
-  <img src="Figures/p4.png" width="300">
+  <img src="Figures/p4.png" width="380">
 </p>
 
 - **Challenge**: Molecules have different numbers of atoms (i.e., different sizes)
