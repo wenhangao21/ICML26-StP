@@ -144,7 +144,8 @@ gdown https://drive.google.com/uc?id=1gpyEJsI1rvANNqMgJTQ3mupZUcgKRnUm
 	- Whenever a new best score is achieved for either metric, the model state is saved as a checkpoint
 	- For GEOM-Drugs, we do not check RDKit metrics nor save checkpoints based on them due to computational costs
 	- **We still only evaluate the best NLL checkpoint for fair comparison**
-- Added scripts for structure evaluation
+- Additional evaluation: The script `eval_structure_qm9.py` is added for structure evaluation
+- Improved sampling algorithm: We improve the sampling algorithm, achieving up to a 12× speedup (see Appendix D.3 of the paper)
 
 ## Quick Overview
 
